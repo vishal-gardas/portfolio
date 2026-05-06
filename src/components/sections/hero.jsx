@@ -280,7 +280,7 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
 
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <h1 className="text-2xl font-bold uppercase tracking-tight md:text-4xl">
-              Shiva Bhattacharjee
+              Vishal Gardas
             </h1>
           </div>
 
@@ -385,22 +385,22 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
                 <span className="font-space-mono text-sm leading-relaxed text-muted-foreground md:text-base">
                   {Array.isArray(body)
                     ? body.map((seg, i) =>
-                        seg.href ? (
-                          <Link
-                            key={i}
-                            href={seg.href}
-                            className="font-semibold text-foreground underline underline-offset-2 transition-colors hover:text-foreground/70"
-                          >
-                            {seg.text}
-                          </Link>
-                        ) : seg.bold ? (
-                          <strong key={i} className="font-semibold text-foreground">
-                            {seg.text}
-                          </strong>
-                        ) : (
-                          <span key={i}>{seg.text}</span>
-                        )
+                      seg.href ? (
+                        <Link
+                          key={i}
+                          href={seg.href}
+                          className="font-semibold text-foreground underline underline-offset-2 transition-colors hover:text-foreground/70"
+                        >
+                          {seg.text}
+                        </Link>
+                      ) : seg.bold ? (
+                        <strong key={i} className="font-semibold text-foreground">
+                          {seg.text}
+                        </strong>
+                      ) : (
+                        <span key={i}>{seg.text}</span>
                       )
+                    )
                     : body}
                 </span>
                 {link && (

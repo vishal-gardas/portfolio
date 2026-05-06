@@ -12,19 +12,19 @@ export async function GET() {
 
     return NextResponse.json({
       github: {
-        name: githubData.name || githubData.login || "Shiva Bhattacharjee",
-        username: githubData.login || "shivabhattacharjee",
+        name: githubData.name || githubData.login || "Vishal Gardas",
+        username: githubData.login || "vishal",
         avatar: githubData.avatar_url || "https://github.com/shivabhattacharjee.png",
-        bio: githubData.bio || "I work on AI, LLMs, and building developer tools on top of them",
-        location: githubData.location || "Delhi, India",
+        bio: githubData.bio || "I work on AI, LLMs, and build pipelines",
+        location: githubData.location || "Chennai, India",
         stats: [
           { label: "Repositories", value: githubData.public_repos || 60 },
           { label: "Followers", value: githubData.followers || 180 }
         ]
       },
       twitter: {
-        name: twitterData.name || "Shiva",
-        username: twitterData.screen_name || "sh17va",
+        name: twitterData.name || "Vishal",
+        username: twitterData.screen_name || "Vishal_aiml",
         avatar: twitterData.avatar_url?.replace("_normal", "") || "https://github.com/shivabhattacharjee.png",
         banner: twitterData.banner_url || "https://pbs.twimg.com/profile_banners/1186556526917324800/1757151975/1500x500",
         bio: twitterData.description || "I write system prompts for a living",
@@ -35,20 +35,20 @@ export async function GET() {
         ]
       },
       linkedin: {
-        name: "Shiva Bhattacharjee",
+        name: "Vishal Gardas",
         username: "Building AI Agents",
         avatar: "https://pbs.twimg.com/profile_images/2040623093945864192/dur1Mty-_400x400.jpg",
         banner: "https://media.licdn.com/dms/image/v2/D5616AQHsUhEEUkcobw/profile-displaybackgroundimage-shrink_350_1400/B56ZzKNUp8IcAg-/0/1772919017837?e=1778716800&v=beta&t=3txh8G3KbnSs8-eaLxbnAs6iQtSbhQAXShVKjcVJ-rw",
         bio: "",
-        location: "Guwahati, Assam, India",
+        location: "Chennai, TN, India",
         stats: [
           { label: "connections", value: "500+" }
         ]
       },
       discord: {
-        name: "Shiva",
-        username: "sh1xva",
-        avatar: "https://github.com/shivabhattacharjee.png",
+        name: "Vishal",
+        username: "wish_81",
+        avatar: "https://discord.com/users/wish_81",
         bio: "My brain no longer brains",
         location: "Mental Hospital",
         stats: []

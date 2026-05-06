@@ -44,7 +44,7 @@ const Footer = () => {
           setVisitors(data.count.toLocaleString());
         }
       })
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   useEffect(() => {
@@ -67,19 +67,19 @@ const Footer = () => {
 
   const formattedDate = time
     ? time.toLocaleDateString("en-US", {
-        weekday: "short",
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      })
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      year: "numeric",
+    })
     : "";
 
   const formattedTime = time
     ? time.toLocaleTimeString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      })
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    })
     : "";
 
   return (
@@ -128,7 +128,7 @@ const Footer = () => {
           )}
         </div>
         <p className="text-xs text-muted-foreground/60">
-          &copy; {new Date().getFullYear()} Shiva Bhattacharjee. All rights
+          &copy; {new Date().getFullYear()} Vishal Gardas. All rights
           reserved.
         </p>
       </div>

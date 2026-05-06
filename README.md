@@ -147,4 +147,4 @@ If you have any questions or need help customizing this template, feel free to o
 
 ---
 
-Made by [Shiva Bhattacharjee](https://github.com/ShivaBhattacharjee)
+Made by [Vishal Gardas](https://github.com/vishal-gardas)

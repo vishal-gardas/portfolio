@@ -10,14 +10,14 @@ import { ScrollToTopButton } from "@/components/scroll-to-top";
 
 export const metadata = {
   title: {
-    template: "%s | Shiva Bhattacharjee",
-    default: "Shiva Bhattacharjee - Full Stack Developer",
+    template: "%s | Vishal Gardas",
+    default: "Vishal Gardas - ML Engineer",
   },
   description:
-    "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
+    "Hello there I am Vishal a ML Engineer and I love to build products that make people's life easier.",
   keywords: [
-    "Shiva Bhattacharjee",
-    "Full Stack Developer",
+    "Vishal Gardas",
+    "ML Engineer",
     "React",
     "Next.js",
     "JavaScript",
@@ -27,9 +27,9 @@ export const metadata = {
     "Portfolio",
     "Software Engineer",
   ],
-  authors: [{ name: "Shiva Bhattacharjee" }],
-  creator: "Shiva Bhattacharjee",
-  publisher: "Shiva Bhattacharjee",
+  authors: [{ name: "Vishal Gardas" }],
+  creator: "Vishal Gardas",
+  publisher: "Vishal Gardas",
   robots: {
     index: true,
     follow: true,
@@ -49,24 +49,24 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://shiva.codes",
-    title: "Shiva Bhattacharjee - Full Stack Developer",
+    title: "Vishal Gardas - ML Engineer",
     description:
-      "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
-    siteName: "Shiva Bhattacharjee Portfolio",
+      "Hello there I am Vishal Gardas a ML Engineer and I love to build products that make people's life easier.",
+    siteName: "Vishal Gardas Portfolio",
     images: [
       {
         url: "https://shiva.codes/opengraph.png",
         width: 1200,
         height: 630,
-        alt: "Shiva Bhattacharjee - Full Stack Developer",
+        alt: "Vishal Gardas - Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shiva Bhattacharjee - Full Stack Developer",
+    title: "Vishal Gardas - ML Engineer",
     description:
-      "Hello there I am Shiva a full stack developer and I love to build products that make people's life easier.",
+      "Hello there I am Vishal Gardas a ML Engineer and I love to build products that make people's life easier.",
     images: ["https://shiva.codes/opengraph.png"],
     creator: "@sh17va",
   },
@@ -96,10 +96,10 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Shiva Bhattacharjee",
-    jobTitle: "Full Stack Developer",
+    name: "Vishal Gardas",
+    jobTitle: "ML Engineer",
     description:
-      "Full stack developer who loves to build products that make people's life easier",
+      "ML Engineer who loves to build products that make people's life easier",
     url: "https://shiva.codes",
     image: "https://shiva.codes/opengraph.png",
   };

@@ -78,7 +78,7 @@ async function fetchLifetimeTotal(token, username, createdAt) {
   );
 }
 
-export async function fetchGitHubContributions(username = "shivabhattacharjee") {
+export async function fetchGitHubContributions(username = "vishal") {
   const token = process.env.GITHUB_TOKEN;
   if (!token) return { contributions: [], lifetimeTotal: 0 };
 
@@ -104,12 +104,12 @@ export async function fetchGitHubContributions(username = "shivabhattacharjee") 
 
     const contributions = calendar
       ? calendar.weeks.flatMap((week) =>
-          week.contributionDays.map((day) => ({
-            date: day.date,
-            count: day.contributionCount ?? 0,
-            level: LEVEL_MAP[day.contributionLevel] ?? 0,
-          }))
-        )
+        week.contributionDays.map((day) => ({
+          date: day.date,
+          count: day.contributionCount ?? 0,
+          level: LEVEL_MAP[day.contributionLevel] ?? 0,
+        }))
+      )
       : [];
 
     const lifetimeTotal = createdAt
