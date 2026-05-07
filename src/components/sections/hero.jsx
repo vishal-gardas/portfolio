@@ -7,11 +7,9 @@ import LinkedinIcon from "@/components/icons/linkedin";
 import DiscordIcon from "@/components/icons/discord";
 import { IoIosMail } from "react-icons/io";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 import Link from "next/link";
 import { GeistPixelSquare } from "geist/font/pixel";
 import GitHubContributionGraph from "./contribution-graph";
-import ClipboardIcon from "@/components/icons/clipboard";
 import { CornerBrackets } from "@/components/ui/corner-brackets";
 import { notableAchievements } from "@/constants";
 
@@ -288,42 +286,6 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             I work on AI, LLMs, and building developer tools on top of them
           </p>
         </div>
-
-        <motion.div
-          className={`flex flex-row items-end gap-4 p-1 ${GeistPixelSquare.className}`}
-          {...fadeUp(0.08)}
-        >
-          <CornerBrackets>
-            <Button
-              size="sm"
-              onClick={() => {
-                navigator.clipboard.writeText("npx shivadev");
-                toast.success("Copied to clipboard", {
-                  description: "You can now paste it in your terminal to see the cli version of my portfolio",
-                  icon: <ClipboardIcon className="h-4 w-4" />,
-                  classNames: { description: "font-space-mono" },
-                });
-              }}
-            >
-              <ClipboardIcon className="mr-1.5 h-3 w-3" /> npx shivadev
-            </Button>
-          </CornerBrackets>
-          <div className="relative -ml-1 flex items-center">
-            <svg
-              className="pointer-events-none size-5 shrink-0 rotate-[190deg] text-muted-foreground/40"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 323.057 323.057"
-              xmlSpace="preserve"
-              fill="currentColor"
-            >
-              <path d="M281.442 256.312c-47.124 59.364-139.536 44.676-160.956-29.376-1.224-3.672-1.836-7.956-2.448-11.628 49.572-11.016 97.92-47.124 102.204-90.576 3.672-39.168-36.108-50.796-62.424-28.764-31.212 26.316-53.244 64.872-55.08 105.875-31.824 4.284-63.036-4.284-80.172-35.496-28.764-52.631 9.792-123.624 61.2-144.432 5.508-1.836 3.06-10.404-2.448-8.568C10.326 33.544-26.394 132.688 21.954 191.439c18.972 22.645 49.572 29.988 81.396 26.316 4.284 41.616 36.72 74.664 75.275 87.516 44.676 14.688 85.68-6.731 111.996-41.616 4.285-5.508-4.896-12.239-9.179-7.343M144.354 132.688c9.792-13.464 22.644-28.764 39.168-34.272 15.911-5.508 21.42 16.524 22.031 26.316.612 12.24-7.956 23.256-15.912 31.824-16.523 18.971-44.063 35.496-72.215 42.839 1.836-23.868 13.464-47.123 26.928-66.707" />
-              <path d="M315.713 233.668c-17.136 0-34.884 1.224-51.408 5.508-6.731 1.836-3.672 11.016 3.061 9.792 13.464-2.448 27.54-1.836 41.004-1.224-.612 7.955-1.224 16.523-2.448 24.479-1.224 6.12-5.508 15.3-1.836 21.42 1.836 3.061 4.896 3.061 7.956 1.836 7.344-3.06 7.344-15.912 8.568-22.644 1.836-11.017 2.447-21.42 2.447-32.437 0-3.67-3.672-6.73-7.344-6.73" />
-            </svg>
-            <span className="ml-2 -rotate-[8deg] whitespace-nowrap text-[10px] text-muted-foreground/50 md:text-xs">
-              try this in <br /> your terminal
-            </span>
-          </div>
-        </motion.div>
       </motion.div>
 
       <div className="space-y-8">
@@ -332,10 +294,11 @@ const Hero = ({ contributionData = [], lifetimeTotal = 0 }) => {
             About Me
           </h5>
           <p className="text-xs font-space-mono md:text-base md:leading-relaxed text-muted-foreground">
-            I&apos;m Shiva, an <strong className="font-semibold text-foreground">Applied AI Engineer</strong>. Got into coding in 9th grade, spent a few years doing freelance work with PHP and jQuery before landing on React. The project that taught me the most was <strong className="font-semibold text-foreground"><a href="https://github.com/shivabhattacharjee/animetrix-next" target="_blank" className="underline">Animetrix</a></strong>, an anime streaming site I built in college that hit <strong className="font-semibold text-foreground">15k users and 200 GitHub stars </strong>. It was technically piracy (I was naive), broke constantly under traffic, which taught me about scalability. I rewrote the infra from scratch and got it to handle <strong className="font-semibold text-foreground">20k users</strong>, picking up <strong className="font-semibold text-foreground">Redis, Docker, horizontal scaling, and YAML </strong> along the way. Eventually got DMCA&apos;d. Worth it.
+            I&apos;m Vishal, an <strong className="font-semibold text-foreground">ML Engineer</strong> currently in my final year pursuing B.Tech in <strong className="font-semibold text-foreground">Computer Science and Engineering (AI/ML)</strong> at <strong className="font-semibold text-foreground">VIT Vellore</strong>. I&apos;m passionate about Artificial Intelligence, Machine Learning, LLMs, and building intelligent systems that solve real-world problems.
           </p>
+
           <p className="mt-4 text-xs font-space-mono md:text-base md:leading-relaxed text-muted-foreground">
-            Won <strong className="font-semibold text-foreground">5 hackathons</strong>, including qualifying for <strong className="font-semibold text-foreground">Smart India Hackathon 2023</strong> in my first semester, first from my college with roughly a ~1% selection rate. Since then I&apos;ve shipped production AI systems at a few early-stage startups. One of them I joined as a founding engineer, where I got deep into <strong className="font-semibold text-foreground">fine-tuning LLMs on low-resource Indian languages</strong> using <strong className="font-semibold text-foreground">Unsloth</strong>, containerizing models with <strong className="font-semibold text-foreground">Docker</strong>, self-hosting on servers, and exposing them as public APIs. Right now I&apos;m working at <strong className="font-semibold text-foreground"><a href="https://www.usebez.ai" target="_blank" className="underline">Bez</a></strong>, building an <strong className="font-semibold text-foreground">AI copilot for jewellery designers</strong> — where I get to work with <strong className="font-semibold text-foreground">AI agent workflows</strong>, <strong className="font-semibold text-foreground">vector search</strong>, <strong className="font-semibold text-foreground">RAG-based memory</strong>, and <strong className="font-semibold text-foreground">multimodal image pipelines</strong>.
+            Alongside academics, I spend most of my time exploring AI research, experimenting with machine learning models, and improving my problem-solving skills. I&apos;m currently preparing for the <strong className="font-semibold text-foreground">GATE examination</strong> and planning to pursue a <strong className="font-semibold text-foreground">Master&apos;s in Artificial Intelligence</strong> to deepen my understanding of advanced AI systems and research.
           </p>
         </motion.div>
 
